@@ -17,22 +17,36 @@
         src="../assets/Banner/heart.png"
         alt="heart"
       />
-      <div class="absolute top-[29%] left-[45%]">
-        <h1 class="mb-[8px] font-bold text-gray-50 text-[128px]">
-          The F2E 4th
-        </h1>
-        <button
-          class="
-            text-h2
-            bg-primary-dark
-            text-gray-100
-            py-[15px]
-            px-[42px]
-            radius-[4px]
-            call-to-action
-          "
-        >
-          互動式網頁設計
+      <div
+        class="
+          absolute
+          top-[29%]
+          left-[45%]
+          text-h2
+          sm:text-[50px]
+          md:text-[65px]
+          lg:text-[80px]
+          xl:text-[100px]
+          2xl:text-[128px]
+          text-gray-50
+        "
+      >
+        <div class="mb-[8px]">The F2E 4th</div>
+        <button>
+          <div
+            class="
+              text-title
+              md:text-h3
+              py-[15px]
+              px-[42px]
+              bg-[#212FB2]
+              text-gray-100
+              radius-[4px]
+              call-to-action
+            "
+          >
+            互動式網頁設計
+          </div>
         </button>
       </div>
       <div class="w-full h-full absolute -bottom-[80%] z-20 overflow-x-hidden">
@@ -391,15 +405,12 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-h1 {
-  @apply text-gray-900;
-  -webkit-text-fill-color: #f9f9fa;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #202020;
+<style lang="scss" scoped>
+.text-h2 {
+  text-shadow: -2px 0 #202020, 0 2px #202020, 2px 0 #202020, 0 -2px #202020;
 }
 
 .call-to-action {
-  filter: drop-shadow(5px 5px 0 #111B72);
+  filter: drop-shadow(5px 5px 0 #4444dd);
 }
 </style>

@@ -6,6 +6,9 @@
   body {
     @apply h-full;
   }
+  #app {
+    font-family: 'Noto Sans TC';
+  }
 }
 
 @layer components {
